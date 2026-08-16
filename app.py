@@ -72,7 +72,7 @@ if openai_api_key:
     agent = create_agent(
     model=llm,
     tools=tools,
-    prompt=prompt)
+    system_prompt=prompt)
 
     # --- UI INTERACTION ---
     if st.button("🚀 Run Pre-Market Analysis", type="primary"):
